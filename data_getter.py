@@ -2,6 +2,7 @@ from selenium import webdriver
 
 #when you run the program in your terminal, make sure that you use python3 -i data_getter.py
 #this will make sure that the website doesn't immediately
+#executable_path='/usr/local/bin/chromedriver_'
 class WikiBot:
 
     def __init__(self):
@@ -12,12 +13,12 @@ class WikiBot:
             "download.directory_upgrade": True,
             "plugins.always_open_pdf_externally": True #It will not show PDF directly in chrome
         })
-        driver = webdriver.Chrome(executable_path='/usr/local/bin/chromedriver_', options = options) #make sure that you have the chrome webdriver installed and placed in path
+        driver = webdriver.Chrome(options = options) #make sure that you have the chrome webdriver installed and placed in path
         driver.get("https://simple.wikipedia.org")
 
     def get_list_articles(self):
-        print("hello")
-        
+        print("hello how are you doing")
+
     
 
 
