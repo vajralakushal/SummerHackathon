@@ -13,6 +13,7 @@ class WikiBot:
             "download.directory_upgrade": True,
             "plugins.always_open_pdf_externally": True #It will not show PDF directly in chrome
         })
+        options.add_experimental_option("detach", True)
         driver = webdriver.Chrome(executable_path='/usr/local/bin/chromedriver',options = options) #make sure that you have the chrome webdriver installed and placed in path
         driver.get("https://simple.wikipedia.org")
 
