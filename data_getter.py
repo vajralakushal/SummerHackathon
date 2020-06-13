@@ -1,4 +1,5 @@
 from selenium import webdriver
+import os
 
 #when you run the program in your terminal, make sure that you use python3 -i data_getter.py
 #this will make sure that the website doesn't immediately

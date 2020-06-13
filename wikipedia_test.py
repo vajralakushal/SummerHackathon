@@ -1,8 +1,9 @@
 import wikipediaapi
-from data_getter import WikiBot
+import requests
+#from data_getter import WikiBot
 
-bot = WikiBot()
-wiki_wiki = wikipediaapi.Wikipedia('en')
-page_py = wiki_wiki.page('Python_(programming_language)')
+#bot = WikiBot()
+simple_wiki = wikipediaapi.Wikipedia('simple')
+normal_wiki = wikipediaapi.Wikipedia('en')
+page_py = simple_wiki.page('Talk:Green')
 print(page_py.summary[:])
-bot.print_current_URL()
