@@ -6,6 +6,6 @@ a = 3
 for title in titles:
     if a == 0:
         break
-    print(title.fi)
+    print(title)
     a = a - 1
 
